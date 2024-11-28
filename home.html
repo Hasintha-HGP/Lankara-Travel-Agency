@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -25,40 +26,35 @@
     <!-- End header section-->
 
     <!-- Start Home section-->
-<section class="Home">
- <div class="swiper home-slider">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide slide" style="background:url(Images/slide3.jpg) no-repeat">
-            <div class="content">
-             <span>explore, discover, travel</span>
-             <h3>travel around the World</h3>
-             <a href="pakage.html" class="btn">dicover more</a>
+    <section class="Home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background:url(Images/slide3.jpg) no-repeat">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>travel around the World</h3>
+                        <a href="pakage.html" class="btn">dicover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background:url(Images/slide1.jpg) no-repeat">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>discover the new places</h3>
+                        <a href="pakage.html" class="btn">dicover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background:url(Images/slide2.jpg) no-repeat">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>make your tour worthwhile</h3>
+                        <a href="pakage.html" class="btn">dicover more</a>
+                    </div>
+                </div>
             </div>
-
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-slide slide" style="background:url(Images/slide1.jpg) no-repeat">
-            <div class="content">
-             <span>explore, discover, travel</span>
-             <h3>discover the new places</h3>
-             <a href="pakage.html" class="btn">dicover more</a>
-            </div>
-
-        </div>
-        <div class="swiper-slide slide" style="background:url(Images/slide2.jpg) no-repeat">
-            <div class="content">
-             <span>explore, discover, travel</span>
-             <h3>make your tour worthwhile </h3>
-             <a href="pakage.html" class="btn">dicover more</a>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
- </div>
-
-</section>
+    </section>
 
 
      <!-- End Home section-->
@@ -215,7 +211,20 @@
 
 
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 
 
